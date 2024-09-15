@@ -13,7 +13,13 @@ int main () {
     int minValue = 1;
     int maxValue = 6;
     
-    
-    
+    // Rolls two dice using the given formula of the assignment
+    // Stores the results of random number inside dice1 and dice2
+    int dice1 = (rand() % (maxValue - minValue + 1)) + minValue;
+    int dice2 = (rand() % (maxValue - minValue + 1)) + minValue;
+
+    // Prints the result
+    cout << "You rolled a " << dice1 << " and a " << dice2 << "." << endl;
+
     return 0;
 }
